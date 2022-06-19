@@ -1,0 +1,31 @@
+
+{
+
+   "titulopag": "bienvenido a la floresteria",
+   "flores":[
+        {
+         "id" : 1,
+         "nombre": "Tulipanes",
+         "temperatura": "24c",
+         "descripcion":"algo que describa al tulipan"
+        },
+        {
+         "id" : 2,
+         "nombre": "Margarita",
+         "temperatura": "26c",
+         "descripcion":"algo que describa al Margarita"
+        },
+        {
+         "id" : 3,
+         "nombre": "Orquidia",
+         "temperatura": "22c",
+         "descripcion":"algo que describa al Orquidia"
+        },
+        {
+         "id" : 4,
+         "nombre": "Azucena",
+         "temperatura": "23c",
+         "descripcion":"algo que describa al Azucena"
+        }
+      ]
+}
