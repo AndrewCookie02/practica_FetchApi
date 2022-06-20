@@ -1,0 +1,39 @@
+
+/******************************************/
+$font1: 'Roboto Condensed', sans-serif ;
+$font2: 'Source Sans Pro', sans-serif;
+$fontp: 'Nunito Sans', sans-serif;
+
+$colors: ('txt1':blue, 'txt2':rgb(8, 75, 80), 'txtp': rgb(102, 19, 4));
+
+@mixin setText ($size, $fontfam, $colortext){
+    font-size: $size;
+    font-family: $fontfam;
+    color: $colortext;
+}
+
+//ejemplo con mapa para definir los estilos de texto
+$textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
+'txt2': 25px $font2 map-get($colors,'txt2'), 
+'txtp': 18px $fontp map-get($colors,'txtp') );
+
+
+.texto{
+//llamo la lista con las configs de textos
+    $lista: map-keys($map: $textos);
+
+    //elementos en la lista que llamé
+    @each $fuente in $lista {
+        $valores: map-get($map: $textos, $key: $fuente);
+
+        $size: nth($list: $valores, $n: 1);
+        $fontfam: nth($list: $valores, $n:2);
+        $colortext: nth($list: $valores , $n: 3);
+
+        &-#{$fuente}{
+            @include setText ($size, $fontfam, $colortext);
+        }
+    }
+}
+
+

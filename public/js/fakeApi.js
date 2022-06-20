@@ -1,3 +1,16 @@
+let botonModal = document.getElementById('btnModal');
+console.log(botonModal);
+let modal = document.getElementById('myModal');
+console.log(modal);
+
+/*botonModal.addEventListener('shown.bs.modal', () => {
+    modal.focus()
+  })
+console.log(botonModal.addEventListener);
+*/
+
+
+/*
 let pUrl = "https://jsonplaceholder.typicode.com/users" ;
 
 fetch(pUrl)

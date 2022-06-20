@@ -1,0 +1,52 @@
+@media all and (max-width:660px){
+    
+    #main .entrada{
+         display: grid;
+         width: 80% ;
+         grid-template-areas: "img" 
+                            "letra";
+         grid-template-columns: 100%;
+
+         figure{
+            grid-area: img;
+            img{
+                width: 80%;
+            }
+        }
+
+        div{
+            grid-area: letra;
+            text-align: center;
+            
+        }
+     }
+
+     #main #Horario{
+        @include margin (15%, 0px, 0px, 20%);
+        display: grid;
+        grid-template-areas: "horario"
+                             "book";
+        
+        width: 80%;
+        grid-template-columns: 100%;
+        table{
+            grid-area: horario;
+        }
+        div{
+            grid-area: book;
+            
+        }
+    }
+
+
+    #lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-top: 30%;
+        .card{
+            width: 20rem;
+            margin-bottom: 10%;
+        }
+    }
+}

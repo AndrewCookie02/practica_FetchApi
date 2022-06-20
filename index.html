@@ -4,25 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club deportivo</title>
+
+    <!--font awesome ref-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- 1.JQuery -->
     <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
- integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
     <!--2.Poppers.Js  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <!-- 3.Boostrap Js  -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- 3.Boostrap Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <!-- 4.Boostrap Css (archivo css personalizado) -->
     <link rel="stylesheet" href="public/css/main.css">
+     
 </head>
 <body>
 
-   <h3 id="titulo">floristeria</h3>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-   <div id="tablaflores"></div>
+  <main>
 
-    <script src="public/js/ejemploFetchApi.js"></script>
+    <div class="entrada animaintro">
+      <figure>
+        <img src="public/img/football.jpg" class="img-fluid" alt="">
+      </figure>
+  
+      <div>
+        <h2 class="texto-txt2">Club Deportivo</h2>
+        <h1 class="texto-txt1">Managua Bears</h1>
+        <p class="texto-txtp">Unete a nuestro club y diviértete entrenando para ser el mejor</p>
+        <p>Mira nuestros Planes de Afilación disponibles</p>
+      </div>
+      <div>
+        <button><a href="">Únete</a></button>
+      </div>
+    </div>
+  
+    <section>
+
+      <div class="card w-25">
+        <h3>PLAN A</h3>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+
+      <div class="card w-25">
+        <h3>PLAN B</h3>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+
+      <div class="card w-25">
+        <h3>PLAN C</h3>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+
+      <div class="card w-25">
+        <h3>PLAN D</h3>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+      
+      <div class="card w-25">
+        <h3>PLAN E</h3>
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- modal -->
+    <div>
+      <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary btn-lg" id="btnModal" data-toggle="modal" data-target="#myModal">
+     Launch
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          Body
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+   
+
+  </main>
+
+ <script src="public/js/fakeApi.js"></script>
+
 </body>
 </html>

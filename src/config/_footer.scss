@@ -1,0 +1,22 @@
+footer{
+    @include margin (0px, 0px, 0px, 40px);
+    text-align: center;
+    section{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+        grid-template-areas: "secc1 secc2"
+                                "secc1 secc2";
+
+    div:nth-child(1){
+        grid-area: secc1;
+    }
+    div:nth-child(2){
+        grid-area: secc2;
+    }
+    }
+
+
+
+}

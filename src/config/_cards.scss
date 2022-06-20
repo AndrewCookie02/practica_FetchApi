@@ -1,0 +1,16 @@
+
+    #lista{
+        display: flex;
+        flex-direction: row;
+        @include margin (0px, 0px, 0px, 10%);
+        .card{
+            width: 40rem;
+            background-color: $myBgColorLight2;
+            .card-body{
+                background-color: $myBgColorLight3;
+            }
+        }
+       
+        
+    }
+
