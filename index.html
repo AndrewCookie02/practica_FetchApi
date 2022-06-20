@@ -59,15 +59,15 @@
         <img src="public/img/football.jpg" class="img-fluid" alt="">
       </figure>
   
-      <div>
+      <div id="hover">
         <h2 class="texto-txt2">Club Deportivo</h2>
         <h1 class="texto-txt1">Managua Bears</h1>
         <p class="texto-txtp">Unete a nuestro club y diviértete entrenando para ser el mejor</p>
         <p>Mira nuestros Planes de Afilación disponibles</p>
-      </div>
-      <div>
-        <button><a href="">Únete</a></button>
-      </div>
+        <div>
+          <button><a href="">Únete</a></button>
+        </div>
+      </div>   
     </div>
   
     <section>
@@ -114,35 +114,34 @@
 
     </section>
 
-    <!-- modal -->
-    <div>
-      <!-- Button trigger modal -->
-   <button type="button" class="btn btn-primary btn-lg" id="btnModal" data-toggle="modal" data-target="#myModal">
-     Launch
-   </button>
+
    
-   <!-- Modal -->
-   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-          Body
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
-   </div>
-    </div>
-   
+  </div>
+</div>
+
 
   </main>
 

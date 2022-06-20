@@ -1,16 +1,16 @@
-#main{
-    @include margin (0px, 0px, 5%, 0px);
+main{
     
     .entrada{
         @include margin (10%, 0px, 0px, 0px);
         background-color: $myBgColorLight2;
-         display: grid;
-         width: 80% ;
-         grid-template-areas: "img letra";
-         grid-template-columns: 50% 50%;
-         align-items: center;
-
-         figure{
+        
+        #hover{
+            background-color: aquamarine;
+            position: relative;
+            top: -3rem;
+            
+        }
+         /*figure{
             grid-area: img;
             img{
                 width: 80%;
@@ -23,8 +23,10 @@
             text-align: center;
             
         }
+        */
      }
      
+     /*
     .btnVer{
         @include margin (0px, 0px, 5%, 10%);
         display: flex;
@@ -67,5 +69,7 @@
     100%{
         opacity: 1;
         transform: scale(1);
+ 
     }
+    */
 }
