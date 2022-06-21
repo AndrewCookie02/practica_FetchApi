@@ -1,55 +1,61 @@
+let pUrl = "http://127.0.0.1:5500/data/planes.json" ;
 
+fetch(pUrl) 
+ .then(response => response.json())  // lo que vamos a hacer con los datros convertidos
+ //ejecutanmos la sig funcion sin esperar a que de un resultado positivo (22) a diferencia del XML Y HTTPrequest
+ .then(data => {
+     //Acá completamos la funcionalidad que necesitamos con la data
+    //console.log(data);
 
+let tabla = document.querySelector("#tablaPlanes");
+let tbody = "<tbody>" ;
+let lista = data.afiliacion;
+//console.log(data.afiliacion);
 
-
-
-/*
-let pUrl = "https://jsonplaceholder.typicode.com/users" ;
-
-fetch(pUrl)
-.then( response => response.json())
-.then ( json => {
-
-let tbUser = document.querySelector("#usuarios");
-
-let txtUsuario = "<tbody>" ;
-//console.log(json);
-
-if (json.length < 1){
-    txtUsuario = txtUsuario + "<tr><td colspan='4'>no hay registros que mostrar</td></tr>"
-} else {
+if (lista.length > 0){
+    
     //si la variabel json tiene datos:
-    json.forEach(element => {
-        txtUsuario = txtUsuario + "<tr id='" + element.id + "onclick = 'verDetalle'(" + element + ")'><td>" + element.     name + "</td>"  +
-                                "<td>" + element.username + "</td>" + 
-                                "<td>" + element.email+ "</td>" +
-                                "</tr>"
+    lista.forEach(element => {
+        tbody = tbody +  "<tr><td>" + element.Codigo + "</td>" + 
+                                            "<td>" + element.NombredelPlan + "</td>" + 
+                                            "<td>" + element.Plazo + "</td>" +
+                                            "<td>" + element.Anualidad + "</td>" +
+                                            "<td>" +
+                                            "<button type='button' class='btn btn-primary texto-txtp' data-bs-toggle='modal' data-bs-target='#exampleModal' id='" + element.id + "'" + "onclick = 'VerInfo("+ element.id +")'" + ">Más Informacion</button>" + "</td>" +
+                                            "</tr>";
     });
 }
-    txtUsuario = txtUsuario + "</tbody>"
-    tbUser.innerHTML = txtUsuario;
+tbody = tbody + "</tbody>";
+document.getElementById('tablaBody').innerHTML = tbody;
 
     })
 .catch( error => console.log(error));
 
-function verDetalle (objeto){
-    let name = document.getElementById("nameobj");
-    let user = document.getElementById("usuariobj");
-    let telf = document.getElementById("telfobj");
-    let website = document.getElementById("Websiteobj");
-
-    name.textContent = objeto.name;
-    user.textContent = objeto.username;
-    telf.textContent = objeto.phone;
-    website.textContent = objeto.website;
-    website.setAttribute('href', objeto.website);
+function VerInfo(objeto) {
+    let urlObj = "http://127.0.0.1:5500/data/planes.json";        
+    fetch (urlObj)
+    .then (resp => resp.json())
+    .then (data => {    
+        console.log(urlObj);
+        console.log(data);
+        //let modal = document.querySelector(".modal"); 
+        let plan = document.querySelector(".modal-header");
+        let texto = "" ;
+        texto = texto + "<h5 class='modal-title' id='modaltitulo'>" + data.NombredelPlan + "</h5>" ;
+        plan.innerHTML = texto ;
+        console.log(plan) ;
+        console.log(texto) ;
+            /*data.forEach(element => {
+                //console.log(modal);
+                let codigo = document.getElementById("cod") ;
+                console.log(codigo);
+                let plan = document.getElementById("modaltitulo");
+                console.log(plan);
+                plan.innerHTML = data.NombredelPlan;
+                codigo.innerHTML = data.Codigo;
+            }) */
+    })
 }
 
-/*
-<div class="container-fluid">
-        <h3 id="nameobj"></h3>
-        <h3 id="usuariobj"></h3>
-        <h3 id="telfobj"></h3>
-        <a href="" id="Websiteobj"></a>
-    </div>
-*/
+
+

@@ -616,7 +616,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #df97b5;
+  background-color: #9e97df;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -11957,80 +11957,162 @@ fieldset:disabled .btn {
   }
 }
 
-main {
-  /*
-    .btnVer{
-        @include margin (0px, 0px, 5%, 10%);
-        display: flex;
-        justify-content: center;
-        a:hover{
-            color: $light;
-        }
-    }
-    #tituloHor{
-        text-align: center;
-    }
-    #Horario{
-        display: grid;
-        grid-template-areas: "horario book";
-        gap: 5%;
-        width: 80%;
-        @include margin (15%, 0px, 0px, 10%);
-        grid-template-rows: 80% 20%;
-        table{
-            grid-area: horario;
-        }
-        div{
-            grid-area: book;
-            width: 100%;
-        }
-    }
+.navbar {
+  background-color: #b3f7d0;
+}
 
- }
+@-webkit-keyframes aparece {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 
-
- @keyframes aparece{
-    0%{
-        opacity: 0;
-        transform: scale(0.1);
-    }
-    50%{
-        opacity: 0.5;
-        transform: scale(1.3);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1);
- 
-    }
-    */
+@keyframes aparece {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 main .entrada {
-  margin-left: 10%;
-  margin-right: 0px;
+  margin-left: 0%;
+  margin-right: 20%;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: #a9c5f8;
-  /*figure{
-            grid-area: img;
-            img{
-                width: 80%;
-                @include margin (10%, 0px, 5%, 0px);
-            }
-        }
-
-        div{
-            grid-area: letra;
-            text-align: center;
-            
-        }
-        */
 }
 
 main .entrada #hover {
-  background-color: aquamarine;
+  background-color: rgba(80, 255, 156, 0.486);
   position: relative;
-  top: -3rem;
+  top: -30rem;
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 0%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  -webkit-animation: aparece 3s;
+          animation: aparece 3s;
+}
+
+main .entrada figure img {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 0px;
+  margin-top: 5%;
+  margin-bottom: 0px;
+}
+
+main .btn {
+  background-color: #f8a9a9;
+}
+
+main .btn:hover {
+  background-color: #aa1919;
+}
+
+main .btn a:hover {
+  color: white;
+}
+
+#planes {
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: -20%;
+  margin-bottom: 0px;
+}
+
+.modal-header {
+  background-color: #b3f7d0;
+}
+
+#cardPlan {
+  width: 100;
+}
+
+#cardPlan .card-body {
+  background-color: #f8a9a9;
+}
+
+footer {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  background-color: #b3f7d0;
+  text-align: center;
+}
+
+footer section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+      grid-template-areas: "secc1 secc2" "secc1 secc2";
+}
+
+footer section div:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: secc1;
+}
+
+footer section div:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: secc2;
+}
+
+/******************************************/
+.texto-txt1 {
+  font-size: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #14145c;
+}
+
+.texto-txt2 {
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #03613a;
+}
+
+.texto-txtp {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #661304;
 }
 /*# sourceMappingURL=main.css.map */

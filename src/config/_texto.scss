@@ -4,7 +4,7 @@ $font1: 'Roboto Condensed', sans-serif ;
 $font2: 'Source Sans Pro', sans-serif;
 $fontp: 'Nunito Sans', sans-serif;
 
-$colors: ('txt1':blue, 'txt2':rgb(8, 75, 80), 'txtp': rgb(102, 19, 4));
+$colors: ('txt1':rgb(20, 20, 92), 'txt2':rgb(3, 97, 58), 'txtp': rgb(102, 19, 4));
 
 @mixin setText ($size, $fontfam, $colortext){
     font-size: $size;

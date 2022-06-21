@@ -1,5 +1,6 @@
 footer{
-    @include margin (0px, 0px, 0px, 40px);
+    @include paddings (0px, 0px, 1%, 3%);
+    background-color: $myBgColorLight3;
     text-align: center;
     section{
         display: grid;

@@ -1,0 +1,55 @@
+{
+   "afiliacion":[
+        {
+         "id" : 1,
+         "Codigo": "#9048",
+         "NombredelPlan": "A: Plan inicial: Preparación temprana.",
+         "Plazo": "Fin de semana, 10:00 a.m-12:00 p.m",
+         "Anualidad":"$15 mensual",
+         "Beneficios":"Se proporcionan pequeños refrigerios. Disponibilidad de Cancha en el horario, proporciona los equipos necesarios como balones y medidas de protección",
+         "Restricciones":"No se puede practicar fuera del horario, los instrumentos no se pueden prestar para llevar",
+         "Nota":"Al finalizar el entrenamiento inicial, para continuar debe evaluarse al deportista y pasar a los siguientes planes:"
+        },
+
+        {
+         "id" : 2,
+         "Codigo": "#8490",
+         "NombredelPlan": "B: Plan básico",
+         "Plazo": "Semana laboral, 2:00 a.m-4:00 p.m",
+         "Anualidad":"$20 mensual",
+         "Beneficios":"Se proporcionan pequeños refrigerios. Disponibilidad de Cancha en el horario, proporciona los equipos necesarios como balones y medidas de protección.",
+         "Restricciones":"No se puede practicar fuera del horario, los instrumentos no se pueden prestar para llevar",
+         "Nota":"x"
+        },
+        {
+          "id" : 3,
+          "Codigo": "#8945",
+          "NombredelPlan": "C: Plan medio",
+          "Plazo": "Semana laboral 3:00 a.m-5:00 p.m",
+          "Anualidad":"$25 mensual",
+          "Beneficios":"Entrenamiento físico y deportivo. Disponibilidad de Cancha en el horario, proporciona los equipos necesarios como balones y medidas de protección. Clases de natación. Menú de almuerzos. ",
+          "Restricciones":"Pedir con antelación préstamo de la cancha fuera del horario, lo mismo si se desea pedir prestado los instrumentos para llevar. La psicina solo se usa en el horario indicado",
+          "Nota":"Puede becarse si el estudiante tiene alto rendimiento"
+        },
+        {
+          "id" : 4,
+          "Codigo": "#9475",
+          "NombredelPlan": "D: Plan medio: Preparación competitiva departamental",
+          "Plazo": "Semana laboral 2:00 a.m-5:00 p.m",
+          "Anualidad":"$30 mensual",
+          "Beneficios":"Entrenamiento físico y deportivo para competencias departamentales. Disponibilidad de Cancha en el horario, proporciona los equipos necesarios como balones y medidas de protección. Piscina incluida. Se proporcionan uniformes para competencia. Menú de almuerzos. ",
+          "Restricciones":"Pedir con antelación préstamo de la cancha y piscina fuera del horario, se puede pedir prestado los intrumentos o pedir para comprar",
+          "Nota":"Para entrar al plan de competencias, el deportista debe ser evaluado. Puede becarse si el estudiante tiene alto rendimiento"
+        },
+        {
+          "id" : 5,
+          "Codigo": "#2085",
+          "NombredelPlan": " E: Plan mayor: Preparación competitiva nacional",
+          "Plazo": "Semana laboral 3:00 a.m-6:00 p.m",
+          "Anualidad":"$40 mensual",
+          "Beneficios":"Entrenamiento físico y deportivo para competencias nacionales. Disponibilidad de Cancha en el horario, proporciona los equipos necesarios como balones y medidas de protección. Piscina y sauna incluida. Se proporcionan uniformes para competencia. Menú de almuerzos. ",
+          "Restricciones":"Pedir con antelación préstamo de la cancha y piscina fuera del horario, se puede pedir prestado los intrumentos o pedir para comprar. Se puede personalizar uniforme siguiendo las normas establecidas",
+          "Nota":"Puede becarse si el estudiante tiene alto rendimiento"
+        }
+      ]
+}

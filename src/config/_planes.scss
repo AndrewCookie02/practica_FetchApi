@@ -1,0 +1,16 @@
+#planes{
+    @include margin (0%, 0%, -20%, 0px);
+}
+
+.modal-header{
+    background-color: $myBgColorLight3;
+}
+#cardPlan{
+    width: 100;
+    .card-body{
+    background-color: $myBgColorLight2;
+    }
+}
+
+
+

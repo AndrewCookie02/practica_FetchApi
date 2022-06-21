@@ -27,9 +27,9 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Club deportivo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,13 +39,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#planes">Planes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Contactos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link disabled">About Us</a>
           </li>
         </ul>
       </div>
@@ -60,90 +60,103 @@
       </figure>
   
       <div id="hover">
-        <h2 class="texto-txt2">Club Deportivo</h2>
-        <h1 class="texto-txt1">Managua Bears</h1>
-        <p class="texto-txtp">Unete a nuestro club y diviértete entrenando para ser el mejor</p>
-        <p>Mira nuestros Planes de Afilación disponibles</p>
+        <h2 class="-txt2">Club Deportivo</h2>
+        <h1 class="-txt1">Managua Bears<i class="fa-solid fa-paw"></i></h1>
+        <p class="-txtp">Unete a nuestro club y diviértete entrenando para ser el mejor</p>
+        <p class="-txtp">Mira nuestros Planes de Afilación disponibles</p>
         <div>
-          <button><a href="">Únete</a></button>
+          <button class="btn btnUnete"><a href="#planes">Únete</a></button>
         </div>
       </div>   
     </div>
-  
-    <section>
 
-      <div class="card w-25">
-        <h3>PLAN A</h3>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-      </div>
+    <section id="planes">
+      <h2 class="-txt1">Nuestras ofertas</h2>
+      <table class="table table-responsive table-striped table-hover" id="tablaPlanes">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>PLAN</th>
+            <th>Plazo</th>
+            <th>Anualidad</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tablaBody">
+          <tr>
 
-      <div class="card w-25">
-        <h3>PLAN B</h3>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-      </div>
-
-      <div class="card w-25">
-        <h3>PLAN C</h3>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-      </div>
-
-      <div class="card w-25">
-        <h3>PLAN D</h3>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-      </div>
-      
-      <div class="card w-25">
-        <h3>PLAN E</h3>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-      </div>
-
+          </tr>
+          <td id="" onclick="VerDetalle()">
+            <button type= "button" class="btn btn-primary -txtp" data-bs-toggle="modal" data-bs-target="#exampleModal">Más Informacion</button> </td>
+        </tbody>
+      </table>
     </section>
+  
 
-
-   
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modaltitulo" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+      
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+
       <div class="modal-body">
-        ...
+        <div class="card" id="cardPlan">
+          <div class="card-body">
+            <p class="card-text" id="cod">  </p>
+            <p class="card-text" id="plazo"></p>
+            <p class="card-text" id="anual"></p>
+            <p class="card-text" id="benef"></p>
+            <p class="card-text" id="restricc"> </p>
+            <p class="card-text" id="nota"> </p>
+          </div>
+        </div>
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
+
     </div>
   </div>
 </div>
 
 
-  </main>
+</main>
+
+<footer id="contact">
+  <h1 class="-txt2">Cont&aacute;ctanos</h1>
+  <section>
+    <div>
+      <div>
+          <p class="-txtp"><i class="fa-solid fa-envelope"></i>managuabears@gmail.com</p>
+      </div>
+      <div>
+      <p class="-txtp"><i class="fa-solid fa-mobile"></i>+505 7845 4798</p>
+      </div>
+    </div>
+
+    <div>
+      <div>
+          <p class="-txtp"><i class="fa-brands fa-instagram-square"></i>Managua Bears</p>
+      </div>
+      <div>
+      <p class="-txtp"><i class="fa-solid fa-map-location-dot"></i>Lorem ipsum dolor sit, amet </p>
+      <p class="-txtp">consectetur adipisicing  elit. Temporibus, placeat!</p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+</footer>
 
  <script src="public/js/fakeApi.js"></script>
 
