@@ -27,12 +27,11 @@ if (lista.length > 0){
 }
 tbody = tbody + "</tbody>";
 document.getElementById('tablaBody').innerHTML = tbody;
-
     })
 .catch( error => console.log(error));
 
 function VerInfo(objeto) {
-    let urlObj = "http://127.0.0.1:5500/data/planes.json";        
+    let urlObj = "https://my-json-server.typicode.com/AndrewCookie02/fake_Api_club/afiliacion/" + objeto ;        
     fetch (urlObj)
     .then (resp => resp.json())
     .then (data => {    
@@ -43,17 +42,21 @@ function VerInfo(objeto) {
         let texto = "" ;
         texto = texto + "<h5 class='modal-title' id='modaltitulo'>" + data.NombredelPlan + "</h5>" ;
         plan.innerHTML = texto ;
-        console.log(plan) ;
-        console.log(texto) ;
-            /*data.forEach(element => {
-                //console.log(modal);
-                let codigo = document.getElementById("cod") ;
-                console.log(codigo);
-                let plan = document.getElementById("modaltitulo");
-                console.log(plan);
-                plan.innerHTML = data.NombredelPlan;
-                codigo.innerHTML = data.Codigo;
-            }) */
+        
+        let codigo = document.getElementById("cod");
+        let plazo = document.getElementById("plazo");
+        let anual = document.getElementById("anual");
+        let benef = document.getElementById("benef");
+        let restricc = document.getElementById("restricc");
+        let nota = document.getElementById("nota");
+
+
+        codigo.textContent = "Código: " + data.Codigo;
+        plazo.textContent =  "Horario: " + data.Plazo;
+        anual.textContent = "Pago: " + data.Anualidad;
+        benef.textContent =  data.Beneficios;
+        restricc.textContent = data.Restricciones;
+        nota.textContent = "Nota: " + data.Nota;
     })
 }
 

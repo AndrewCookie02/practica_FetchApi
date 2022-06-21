@@ -1,5 +1,13 @@
 #planes{
     @include margin (0%, 0%, -20%, 0px);
+    text-align: center;
+    thead{
+        background-color: $myBgColorLight2;
+    }
+    tbody{
+        background-color: $myBgColorLight4;
+    }
+
 }
 
 .modal-header{
@@ -9,6 +17,7 @@
     width: 100;
     .card-body{
     background-color: $myBgColorLight2;
+    text-align: center;
     }
 }
 

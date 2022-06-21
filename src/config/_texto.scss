@@ -1,10 +1,11 @@
 
 /******************************************/
-$font1: 'Roboto Condensed', sans-serif ;
-$font2: 'Source Sans Pro', sans-serif;
-$fontp: 'Nunito Sans', sans-serif;
+$font1: 'League Gothic', sans-serif;
+$font2: 'Ubuntu', sans-serif;
+$fontp: 'Fira Sans', sans-serif;
+$fontnota: 'Dosis', sans-serif;
 
-$colors: ('txt1':rgb(20, 20, 92), 'txt2':rgb(3, 97, 58), 'txtp': rgb(102, 19, 4));
+$colors: ('txt1':rgb(20, 20, 92), 'txt2':rgb(3, 97, 58), 'txtp': rgb(102, 19, 4), 'txtnota': rgb(102, 19, 4));
 
 @mixin setText ($size, $fontfam, $colortext){
     font-size: $size;
@@ -13,9 +14,9 @@ $colors: ('txt1':rgb(20, 20, 92), 'txt2':rgb(3, 97, 58), 'txtp': rgb(102, 19, 4)
 }
 
 //ejemplo con mapa para definir los estilos de texto
-$textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
+$textos: ('txt1': 50px $font1 map-get($colors,'txt1'),
 'txt2': 25px $font2 map-get($colors,'txt2'), 
-'txtp': 18px $fontp map-get($colors,'txtp') );
+'txtp': 18px $fontp map-get($colors,'txtp'),'txtnota': 18px $fontnota map-get($colors,'txtnota') );
 
 
 .texto{
@@ -25,7 +26,6 @@ $textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
     //elementos en la lista que llamé
     @each $fuente in $lista {
         $valores: map-get($map: $textos, $key: $fuente);
-
         $size: nth($list: $valores, $n: 1);
         $fontfam: nth($list: $valores, $n:2);
         $colortext: nth($list: $valores , $n: 3);
